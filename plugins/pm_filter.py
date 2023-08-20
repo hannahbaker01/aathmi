@@ -36,7 +36,7 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
-
+SPELL_TRUE = 'True'
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
@@ -1426,7 +1426,7 @@ async def auto_filter(client, msg, spoll=False):
             search = message.text
             files, offset, total_results = await get_search_results(message.chat.id ,search.lower(), offset=0, filter=True)
             if not files:
-                if settings["spell_check"]:
+                if SPELL_TRUE:
                     return await advantage_spell_chok(client, msg, search, reply)
                 else:
                     if NO_RESULTS_MSG:
