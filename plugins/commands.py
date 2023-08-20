@@ -26,6 +26,9 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('🔗 𝗚𝗿𝗼𝘂𝗽', url='https://t.me/+uqYYOOtw6L0xMDI1'),
             InlineKeyboardButton('𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔗', url='https://t.me/infinity_padangal')
+        ],[
+            InlineKeyboardButton('• 𝗛𝗲𝗹𝗽', callback_data='help'),
+            InlineKeyboardButton('• 𝗔𝗯𝗼𝘂𝘁', callback_data='about')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -48,6 +51,9 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('🔗 𝗚𝗿𝗼𝘂𝗽', url='https://t.me/+uqYYOOtw6L0xMDI1'),
             InlineKeyboardButton('𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔗', url='https://t.me/infinity_padangal')
+        ],[
+            InlineKeyboardButton('• 𝗛𝗲𝗹𝗽', callback_data='help'),
+            InlineKeyboardButton('• 𝗔𝗯𝗼𝘂𝘁', callback_data='about')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -90,6 +96,9 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('🔗 𝗚𝗿𝗼𝘂𝗽', url='https://t.me/+uqYYOOtw6L0xMDI1'),
             InlineKeyboardButton('𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔗', url='https://t.me/infinity_padangal')
+        ],[
+            InlineKeyboardButton('• 𝗛𝗲𝗹𝗽', callback_data='help'),
+            InlineKeyboardButton('• 𝗔𝗯𝗼𝘂𝘁', callback_data='about')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
