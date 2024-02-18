@@ -56,6 +56,7 @@ REQST_CHANNEL = (int(REQST_CHANNEL) if REQST_CHANNEL and id_pattern.search(REQST
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
+PORT = environ.get("PORT", "8080")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002049466903'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'subotsupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
