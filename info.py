@@ -74,6 +74,8 @@ IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "4bf1296f59ce349f014feabcf6d43250f0fe594e")
 VERIFY2_URL = environ.get('VERIFY2_URL', "Tnshort.in")
 VERIFY2_API = environ.get('VERIFY2_API', "4bf1296f59ce349f014feabcf6d43250f0fe594e")
+MAX_B_TN = environ.get("MAX_B_TN", "5")
+MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
