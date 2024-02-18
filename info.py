@@ -23,6 +23,9 @@ API_HASH = "223db54fc0fddfaa5e71d419a9d24a99"
 BOT_TOKEN = "6590079524:AAEabuzaOLpLToII77lFEbDwXb5MnG7x7Lo"
 PORT = environ.get("PORT", "8080")
 # Bot settings
+SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
+NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
+
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 BOT_START_TIME = time.time()
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
